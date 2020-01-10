@@ -81,14 +81,12 @@
 		ACA9496823C9173700C7769B /* Rock-Tracks */ = {
 			isa = PBXGroup;
 			children = (
+				ACA9498F23C924C100C7769B /* Tracks */,
 				ACA9496923C9173700C7769B /* AppDelegate.swift */,
-				ACA9496D23C9173700C7769B /* TrackListViewController.swift */,
 				ACA9496F23C9173700C7769B /* Main.storyboard */,
 				ACA9497223C9173800C7769B /* Assets.xcassets */,
 				ACA9497423C9173800C7769B /* LaunchScreen.storyboard */,
 				ACA9497723C9173800C7769B /* Info.plist */,
-				ACA9498B23C91F9A00C7769B /* TrackDetailsViewController.swift */,
-				ACA9498D23C921FF00C7769B /* TrackListSplitViewController.swift */,
 			);
 			path = "Rock-Tracks";
 			sourceTree = "<group>";
@@ -100,6 +98,24 @@
 				ACA9498223C9173800C7769B /* Info.plist */,
 			);
 			path = "Rock-TracksTests";
+			sourceTree = "<group>";
+		};
+		ACA9498F23C924C100C7769B /* Tracks */ = {
+			isa = PBXGroup;
+			children = (
+				ACA9498D23C921FF00C7769B /* TrackListSplitViewController.swift */,
+				ACA9499023C924D200C7769B /* View */,
+			);
+			path = Tracks;
+			sourceTree = "<group>";
+		};
+		ACA9499023C924D200C7769B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACA9496D23C9173700C7769B /* TrackListViewController.swift */,
+				ACA9498B23C91F9A00C7769B /* TrackDetailsViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
