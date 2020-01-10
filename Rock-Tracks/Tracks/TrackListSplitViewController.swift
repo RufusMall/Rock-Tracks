@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TrackListSplitViewController.swift
 //  Rock-Tracks
 //
 //  Created by Rufus on 10/01/2020.
@@ -8,13 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class TrackListSplitViewController: UISplitViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.preferredDisplayMode = .allVisible
     }
-
-
 }
-
