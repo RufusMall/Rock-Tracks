@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		ACA9496A23C9173700C7769B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9496923C9173700C7769B /* AppDelegate.swift */; };
-		ACA9496C23C9173700C7769B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9496B23C9173700C7769B /* SceneDelegate.swift */; };
 		ACA9496E23C9173700C7769B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9496D23C9173700C7769B /* ViewController.swift */; };
 		ACA9497123C9173700C7769B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA9496F23C9173700C7769B /* Main.storyboard */; };
 		ACA9497323C9173800C7769B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA9497223C9173800C7769B /* Assets.xcassets */; };
@@ -29,7 +28,6 @@
 /* Begin PBXFileReference section */
 		ACA9496623C9173700C7769B /* Rock-Tracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock-Tracks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA9496923C9173700C7769B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACA9496B23C9173700C7769B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ACA9496D23C9173700C7769B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ACA9497023C9173700C7769B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACA9497223C9173800C7769B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				ACA9496923C9173700C7769B /* AppDelegate.swift */,
-				ACA9496B23C9173700C7769B /* SceneDelegate.swift */,
 				ACA9496D23C9173700C7769B /* ViewController.swift */,
 				ACA9496F23C9173700C7769B /* Main.storyboard */,
 				ACA9497223C9173800C7769B /* Assets.xcassets */,
@@ -202,7 +199,6 @@
 			files = (
 				ACA9496E23C9173700C7769B /* ViewController.swift in Sources */,
 				ACA9496A23C9173700C7769B /* AppDelegate.swift in Sources */,
-				ACA9496C23C9173700C7769B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +361,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MQ4Z795YVF;
 				INFOPLIST_FILE = "Rock-Tracks/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -384,7 +380,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MQ4Z795YVF;
 				INFOPLIST_FILE = "Rock-Tracks/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
