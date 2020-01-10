@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		ACA9496A23C9173700C7769B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9496923C9173700C7769B /* AppDelegate.swift */; };
-		ACA9496E23C9173700C7769B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9496D23C9173700C7769B /* ViewController.swift */; };
+		ACA9496E23C9173700C7769B /* TrackListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9496D23C9173700C7769B /* TrackListViewController.swift */; };
 		ACA9497123C9173700C7769B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA9496F23C9173700C7769B /* Main.storyboard */; };
 		ACA9497323C9173800C7769B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA9497223C9173800C7769B /* Assets.xcassets */; };
 		ACA9497623C9173800C7769B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA9497423C9173800C7769B /* LaunchScreen.storyboard */; };
 		ACA9498123C9173800C7769B /* Rock_TracksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9498023C9173800C7769B /* Rock_TracksTests.swift */; };
+		ACA9498C23C91F9A00C7769B /* TrackDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9498B23C91F9A00C7769B /* TrackDetailsViewController.swift */; };
+		ACA9498E23C921FF00C7769B /* TrackListSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9498D23C921FF00C7769B /* TrackListSplitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +30,7 @@
 /* Begin PBXFileReference section */
 		ACA9496623C9173700C7769B /* Rock-Tracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock-Tracks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA9496923C9173700C7769B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACA9496D23C9173700C7769B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACA9496D23C9173700C7769B /* TrackListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewController.swift; sourceTree = "<group>"; };
 		ACA9497023C9173700C7769B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACA9497223C9173800C7769B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACA9497523C9173800C7769B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		ACA9497C23C9173800C7769B /* Rock-TracksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rock-TracksTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA9498023C9173800C7769B /* Rock_TracksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rock_TracksTests.swift; sourceTree = "<group>"; };
 		ACA9498223C9173800C7769B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACA9498B23C91F9A00C7769B /* TrackDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailsViewController.swift; sourceTree = "<group>"; };
+		ACA9498D23C921FF00C7769B /* TrackListSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListSplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				ACA9496923C9173700C7769B /* AppDelegate.swift */,
-				ACA9496D23C9173700C7769B /* ViewController.swift */,
+				ACA9496D23C9173700C7769B /* TrackListViewController.swift */,
 				ACA9496F23C9173700C7769B /* Main.storyboard */,
 				ACA9497223C9173800C7769B /* Assets.xcassets */,
 				ACA9497423C9173800C7769B /* LaunchScreen.storyboard */,
 				ACA9497723C9173800C7769B /* Info.plist */,
+				ACA9498B23C91F9A00C7769B /* TrackDetailsViewController.swift */,
+				ACA9498D23C921FF00C7769B /* TrackListSplitViewController.swift */,
 			);
 			path = "Rock-Tracks";
 			sourceTree = "<group>";
@@ -197,7 +203,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACA9496E23C9173700C7769B /* ViewController.swift in Sources */,
+				ACA9496E23C9173700C7769B /* TrackListViewController.swift in Sources */,
+				ACA9498E23C921FF00C7769B /* TrackListSplitViewController.swift in Sources */,
+				ACA9498C23C91F9A00C7769B /* TrackDetailsViewController.swift in Sources */,
 				ACA9496A23C9173700C7769B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -344,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
