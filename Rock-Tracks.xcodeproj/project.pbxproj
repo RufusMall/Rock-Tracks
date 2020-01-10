@@ -12,9 +12,16 @@
 		ACA9497123C9173700C7769B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA9496F23C9173700C7769B /* Main.storyboard */; };
 		ACA9497323C9173800C7769B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA9497223C9173800C7769B /* Assets.xcassets */; };
 		ACA9497623C9173800C7769B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA9497423C9173800C7769B /* LaunchScreen.storyboard */; };
-		ACA9498123C9173800C7769B /* Rock_TracksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9498023C9173800C7769B /* Rock_TracksTests.swift */; };
 		ACA9498C23C91F9A00C7769B /* TrackDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9498B23C91F9A00C7769B /* TrackDetailsViewController.swift */; };
 		ACA9498E23C921FF00C7769B /* TrackListSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9498D23C921FF00C7769B /* TrackListSplitViewController.swift */; };
+		ACA9499623C928BF00C7769B /* WebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9499523C928BF00C7769B /* WebClient.swift */; };
+		ACA9499823C9297000C7769B /* WebClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9499723C9297000C7769B /* WebClientProtocol.swift */; };
+		ACA9499A23C92B4E00C7769B /* iTunesTrackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9499923C92B4E00C7769B /* iTunesTrackService.swift */; };
+		ACA9499D23C92B9400C7769B /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9499C23C92B9400C7769B /* BaseService.swift */; };
+		ACA949A423C92CBA00C7769B /* iTunesTrackServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA949A323C92CBA00C7769B /* iTunesTrackServiceTests.swift */; };
+		ACA949A623C92CF900C7769B /* TrackListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA949A523C92CF900C7769B /* TrackListResponse.swift */; };
+		ACA949A823C92D7C00C7769B /* TrackServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA949A723C92D7C00C7769B /* TrackServiceProtocol.swift */; };
+		ACA949AA23C934CF00C7769B /* TrackTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA949A923C934CF00C7769B /* TrackTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +43,17 @@
 		ACA9497523C9173800C7769B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACA9497723C9173800C7769B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACA9497C23C9173800C7769B /* Rock-TracksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rock-TracksTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACA9498023C9173800C7769B /* Rock_TracksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rock_TracksTests.swift; sourceTree = "<group>"; };
 		ACA9498223C9173800C7769B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACA9498B23C91F9A00C7769B /* TrackDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailsViewController.swift; sourceTree = "<group>"; };
 		ACA9498D23C921FF00C7769B /* TrackListSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListSplitViewController.swift; sourceTree = "<group>"; };
+		ACA9499523C928BF00C7769B /* WebClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebClient.swift; sourceTree = "<group>"; };
+		ACA9499723C9297000C7769B /* WebClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebClientProtocol.swift; sourceTree = "<group>"; };
+		ACA9499923C92B4E00C7769B /* iTunesTrackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesTrackService.swift; sourceTree = "<group>"; };
+		ACA9499C23C92B9400C7769B /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		ACA949A323C92CBA00C7769B /* iTunesTrackServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesTrackServiceTests.swift; sourceTree = "<group>"; };
+		ACA949A523C92CF900C7769B /* TrackListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListResponse.swift; sourceTree = "<group>"; };
+		ACA949A723C92D7C00C7769B /* TrackServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackServiceProtocol.swift; sourceTree = "<group>"; };
+		ACA949A923C934CF00C7769B /* TrackTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +95,7 @@
 		ACA9496823C9173700C7769B /* Rock-Tracks */ = {
 			isa = PBXGroup;
 			children = (
+				ACA9499123C927BD00C7769B /* API */,
 				ACA9498F23C924C100C7769B /* Tracks */,
 				ACA9496923C9173700C7769B /* AppDelegate.swift */,
 				ACA9496F23C9173700C7769B /* Main.storyboard */,
@@ -94,8 +109,9 @@
 		ACA9497F23C9173800C7769B /* Rock-TracksTests */ = {
 			isa = PBXGroup;
 			children = (
-				ACA9498023C9173800C7769B /* Rock_TracksTests.swift */,
+				ACA9499F23C92C7E00C7769B /* Services */,
 				ACA9498223C9173800C7769B /* Info.plist */,
+				ACA949A923C934CF00C7769B /* TrackTestCase.swift */,
 			);
 			path = "Rock-TracksTests";
 			sourceTree = "<group>";
@@ -116,6 +132,59 @@
 				ACA9498B23C91F9A00C7769B /* TrackDetailsViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		ACA9499123C927BD00C7769B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				ACA9499B23C92B8500C7769B /* Services */,
+				ACA9499223C927CB00C7769B /* Network */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		ACA9499223C927CB00C7769B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ACA9499523C928BF00C7769B /* WebClient.swift */,
+				ACA9499723C9297000C7769B /* WebClientProtocol.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		ACA9499B23C92B8500C7769B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ACA9499E23C92C4500C7769B /* TrackService */,
+				ACA9499C23C92B9400C7769B /* BaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ACA9499E23C92C4500C7769B /* TrackService */ = {
+			isa = PBXGroup;
+			children = (
+				ACA9499923C92B4E00C7769B /* iTunesTrackService.swift */,
+				ACA949A523C92CF900C7769B /* TrackListResponse.swift */,
+				ACA949A723C92D7C00C7769B /* TrackServiceProtocol.swift */,
+			);
+			path = TrackService;
+			sourceTree = "<group>";
+		};
+		ACA9499F23C92C7E00C7769B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ACA949A023C92C8D00C7769B /* TrackService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ACA949A023C92C8D00C7769B /* TrackService */ = {
+			isa = PBXGroup;
+			children = (
+				ACA949A323C92CBA00C7769B /* iTunesTrackServiceTests.swift */,
+			);
+			path = TrackService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,10 +288,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA9499D23C92B9400C7769B /* BaseService.swift in Sources */,
 				ACA9496E23C9173700C7769B /* TrackListViewController.swift in Sources */,
 				ACA9498E23C921FF00C7769B /* TrackListSplitViewController.swift in Sources */,
 				ACA9498C23C91F9A00C7769B /* TrackDetailsViewController.swift in Sources */,
+				ACA9499A23C92B4E00C7769B /* iTunesTrackService.swift in Sources */,
+				ACA949A623C92CF900C7769B /* TrackListResponse.swift in Sources */,
+				ACA9499823C9297000C7769B /* WebClientProtocol.swift in Sources */,
+				ACA9499623C928BF00C7769B /* WebClient.swift in Sources */,
 				ACA9496A23C9173700C7769B /* AppDelegate.swift in Sources */,
+				ACA949A823C92D7C00C7769B /* TrackServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +305,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACA9498123C9173800C7769B /* Rock_TracksTests.swift in Sources */,
+				ACA949A423C92CBA00C7769B /* iTunesTrackServiceTests.swift in Sources */,
+				ACA949AA23C934CF00C7769B /* TrackTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
