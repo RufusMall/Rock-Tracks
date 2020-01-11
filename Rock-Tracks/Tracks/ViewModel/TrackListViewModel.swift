@@ -8,7 +8,7 @@
 
 import Foundation
 
-class TrackViewModel {
+class TrackCellViewModel {
     let name, artist, price, artworkURL: String
     
     init(track: Track) {
@@ -25,7 +25,7 @@ public protocol TrackListViewDelegate: class {
 
 public class TrackListViewModel {
     public struct Output {
-        let trackListItems: [TrackViewModel]
+        let trackListItems: [TrackCellViewModel]
         let errorMessage: String?
     }
     
@@ -47,7 +47,7 @@ public class TrackListViewModel {
         trackService.fetchTracks(genre:.rock) { result in
             switch result {
             case .success(let response):
-                let trackVMs =  response.results.map({TrackViewModel(track:$0)})
+                let trackVMs =  response.results.map({TrackCellViewModel(track:$0)})
                 self.output = Output(trackListItems: trackVMs, errorMessage: nil)
             case .failure(let error):
                 self.output = Output(trackListItems: self.output.trackListItems, errorMessage: error.localizedDescription)
