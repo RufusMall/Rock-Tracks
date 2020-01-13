@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC17B2C323C94E2A00A53A94 /* BaseMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17B2C223C94E2A00A53A94 /* BaseMockService.swift */; };
+		AC17B2C523C94E4400A53A94 /* MockiTunesTrackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17B2C423C94E4400A53A94 /* MockiTunesTrackService.swift */; };
+		AC17B2C723C94F3A00A53A94 /* mockRockTrackResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = AC17B2C623C94F3A00A53A94 /* mockRockTrackResponse.json */; };
+		AC17B2C823C94F3D00A53A94 /* mockRockTrackResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = AC17B2C623C94F3A00A53A94 /* mockRockTrackResponse.json */; };
+		AC17B2CB23C957D700A53A94 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17B2CA23C957D700A53A94 /* CurrencyFormatter.swift */; };
+		AC3A761623C9955B001901FB /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3A761523C9955B001901FB /* TrackTableViewCell.swift */; };
 		ACA9496A23C9173700C7769B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9496923C9173700C7769B /* AppDelegate.swift */; };
 		ACA9496E23C9173700C7769B /* TrackListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9496D23C9173700C7769B /* TrackListViewController.swift */; };
 		ACA9497123C9173700C7769B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA9496F23C9173700C7769B /* Main.storyboard */; };
@@ -22,6 +28,11 @@
 		ACA949A623C92CF900C7769B /* TrackListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA949A523C92CF900C7769B /* TrackListResponse.swift */; };
 		ACA949A823C92D7C00C7769B /* TrackServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA949A723C92D7C00C7769B /* TrackServiceProtocol.swift */; };
 		ACA949AA23C934CF00C7769B /* TrackTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA949A923C934CF00C7769B /* TrackTestCase.swift */; };
+		ACA949AC23C940AD00C7769B /* TrackListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA949AB23C940AD00C7769B /* TrackListViewModel.swift */; };
+		ACA949B123C942AA00C7769B /* TrackListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA949B023C942AA00C7769B /* TrackListViewModelTests.swift */; };
+		ACBD5EA723CC0921003B05DA /* TrackCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD5EA623CC0921003B05DA /* TrackCellViewModel.swift */; };
+		ACBD5EAA23CC10F0003B05DA /* TrackDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD5EA923CC10F0003B05DA /* TrackDetailsViewModel.swift */; };
+		ACBD5EAC23CC205E003B05DA /* TrackDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD5EAB23CC205E003B05DA /* TrackDateFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC17B2C223C94E2A00A53A94 /* BaseMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMockService.swift; sourceTree = "<group>"; };
+		AC17B2C423C94E4400A53A94 /* MockiTunesTrackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockiTunesTrackService.swift; sourceTree = "<group>"; };
+		AC17B2C623C94F3A00A53A94 /* mockRockTrackResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mockRockTrackResponse.json; sourceTree = "<group>"; };
+		AC17B2CA23C957D700A53A94 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
+		AC3A761523C9955B001901FB /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
 		ACA9496623C9173700C7769B /* Rock Tracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock Tracks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA9496923C9173700C7769B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACA9496D23C9173700C7769B /* TrackListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +70,11 @@
 		ACA949A523C92CF900C7769B /* TrackListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListResponse.swift; sourceTree = "<group>"; };
 		ACA949A723C92D7C00C7769B /* TrackServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackServiceProtocol.swift; sourceTree = "<group>"; };
 		ACA949A923C934CF00C7769B /* TrackTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTestCase.swift; sourceTree = "<group>"; };
+		ACA949AB23C940AD00C7769B /* TrackListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewModel.swift; sourceTree = "<group>"; };
+		ACA949B023C942AA00C7769B /* TrackListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewModelTests.swift; sourceTree = "<group>"; };
+		ACBD5EA623CC0921003B05DA /* TrackCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCellViewModel.swift; sourceTree = "<group>"; };
+		ACBD5EA923CC10F0003B05DA /* TrackDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrackDetailsViewModel.swift; path = "Rock-Tracks/Tracks/ViewModel/TrackDetailsViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		ACBD5EAB23CC205E003B05DA /* TrackDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDateFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +95,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC17B2C923C957C800A53A94 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AC17B2CA23C957D700A53A94 /* CurrencyFormatter.swift */,
+				ACBD5EAB23CC205E003B05DA /* TrackDateFormatter.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AC3A761423C9954C001901FB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AC3A761523C9955B001901FB /* TrackTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		ACA9495D23C9173700C7769B = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +133,13 @@
 		ACA9496823C9173700C7769B /* Rock-Tracks */ = {
 			isa = PBXGroup;
 			children = (
+				AC17B2C923C957C800A53A94 /* Common */,
 				ACA9499123C927BD00C7769B /* API */,
 				ACA9498F23C924C100C7769B /* Tracks */,
 				ACA9496923C9173700C7769B /* AppDelegate.swift */,
 				ACA9496F23C9173700C7769B /* Main.storyboard */,
 				ACA9497223C9173800C7769B /* Assets.xcassets */,
+				AC17B2C623C94F3A00A53A94 /* mockRockTrackResponse.json */,
 				ACA9497423C9173800C7769B /* LaunchScreen.storyboard */,
 				ACA9497723C9173800C7769B /* Info.plist */,
 			);
@@ -109,6 +149,7 @@
 		ACA9497F23C9173800C7769B /* Rock-TracksTests */ = {
 			isa = PBXGroup;
 			children = (
+				ACA949AE23C9429300C7769B /* Tracks */,
 				ACA9499F23C92C7E00C7769B /* Services */,
 				ACA9498223C9173800C7769B /* Info.plist */,
 				ACA949A923C934CF00C7769B /* TrackTestCase.swift */,
@@ -120,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				ACA9498D23C921FF00C7769B /* TrackListSplitViewController.swift */,
+				ACA949AD23C940B200C7769B /* ViewModel */,
 				ACA9499023C924D200C7769B /* View */,
 			);
 			path = Tracks;
@@ -128,6 +170,7 @@
 		ACA9499023C924D200C7769B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC3A761423C9954C001901FB /* Cells */,
 				ACA9496D23C9173700C7769B /* TrackListViewController.swift */,
 				ACA9498B23C91F9A00C7769B /* TrackDetailsViewController.swift */,
 			);
@@ -175,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				ACA949A023C92C8D00C7769B /* TrackService */,
+				AC17B2C223C94E2A00A53A94 /* BaseMockService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -183,8 +227,43 @@
 			isa = PBXGroup;
 			children = (
 				ACA949A323C92CBA00C7769B /* iTunesTrackServiceTests.swift */,
+				AC17B2C423C94E4400A53A94 /* MockiTunesTrackService.swift */,
 			);
 			path = TrackService;
+			sourceTree = "<group>";
+		};
+		ACA949AD23C940B200C7769B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ACBD5EA823CC10C0003B05DA /* Cell */,
+				ACBD5EA923CC10F0003B05DA /* TrackDetailsViewModel.swift */,
+				ACA949AB23C940AD00C7769B /* TrackListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ACA949AE23C9429300C7769B /* Tracks */ = {
+			isa = PBXGroup;
+			children = (
+				ACA949AF23C9429800C7769B /* ViewModel */,
+			);
+			path = Tracks;
+			sourceTree = "<group>";
+		};
+		ACA949AF23C9429800C7769B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ACA949B023C942AA00C7769B /* TrackListViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ACBD5EA823CC10C0003B05DA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ACBD5EA623CC0921003B05DA /* TrackCellViewModel.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +350,7 @@
 				ACA9497623C9173800C7769B /* LaunchScreen.storyboard in Resources */,
 				ACA9497323C9173800C7769B /* Assets.xcassets in Resources */,
 				ACA9497123C9173700C7769B /* Main.storyboard in Resources */,
+				AC17B2C723C94F3A00A53A94 /* mockRockTrackResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC17B2C823C94F3D00A53A94 /* mockRockTrackResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,13 +370,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACA9499D23C92B9400C7769B /* BaseService.swift in Sources */,
+				AC17B2CB23C957D700A53A94 /* CurrencyFormatter.swift in Sources */,
+				ACBD5EA723CC0921003B05DA /* TrackCellViewModel.swift in Sources */,
 				ACA9496E23C9173700C7769B /* TrackListViewController.swift in Sources */,
 				ACA9498E23C921FF00C7769B /* TrackListSplitViewController.swift in Sources */,
 				ACA9498C23C91F9A00C7769B /* TrackDetailsViewController.swift in Sources */,
+				ACBD5EAA23CC10F0003B05DA /* TrackDetailsViewModel.swift in Sources */,
+				AC3A761623C9955B001901FB /* TrackTableViewCell.swift in Sources */,
 				ACA9499A23C92B4E00C7769B /* iTunesTrackService.swift in Sources */,
 				ACA949A623C92CF900C7769B /* TrackListResponse.swift in Sources */,
+				ACBD5EAC23CC205E003B05DA /* TrackDateFormatter.swift in Sources */,
 				ACA9499823C9297000C7769B /* WebClientProtocol.swift in Sources */,
 				ACA9499623C928BF00C7769B /* WebClient.swift in Sources */,
+				ACA949AC23C940AD00C7769B /* TrackListViewModel.swift in Sources */,
 				ACA9496A23C9173700C7769B /* AppDelegate.swift in Sources */,
 				ACA949A823C92D7C00C7769B /* TrackServiceProtocol.swift in Sources */,
 			);
@@ -306,7 +393,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACA949A423C92CBA00C7769B /* iTunesTrackServiceTests.swift in Sources */,
+				ACA949B123C942AA00C7769B /* TrackListViewModelTests.swift in Sources */,
+				AC17B2C323C94E2A00A53A94 /* BaseMockService.swift in Sources */,
 				ACA949AA23C934CF00C7769B /* TrackTestCase.swift in Sources */,
+				AC17B2C523C94E4400A53A94 /* MockiTunesTrackService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

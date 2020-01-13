@@ -37,17 +37,18 @@ public class BaseService {
     
     public func get<T: Decodable>(url: URL, completion: @escaping (Result<T, Error>)->()) {
         webClient.get(url: url) { result in
-            
-            switch result {
-            case .success(let data):
-                do {
-                    let decodedItem = try self.decoder.decode(T.self, from: data)
-                    completion(.success(decodedItem))
-                } catch let error {
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let data):
+                    do {
+                        let decodedItem = try self.decoder.decode(T.self, from: data)
+                        completion(.success(decodedItem))
+                    } catch let error {
+                        completion(.failure(error))
+                    }
+                case .failure(let error):
                     completion(.failure(error))
                 }
-            case .failure(let error):
-                completion(.failure(error))
             }
         }
     }
