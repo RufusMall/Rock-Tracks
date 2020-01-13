@@ -7,17 +7,7 @@
 //
 
 import Foundation
-
-class TrackCellViewModel {
-    let name, artist, price, artworkURL: String
-    
-    init(track: Track) {
-        self.name = track.trackName
-        self.artist = track.artistName
-        self.price = "\(track.trackPrice)"
-        self.artworkURL = track.artworkUrl100
-    }
-}
+import UIKit.UIImage
 
 public protocol TrackListViewDelegate: class {
     func didUpdate(viewState: TrackListViewModel.Output)
@@ -25,32 +15,44 @@ public protocol TrackListViewDelegate: class {
 
 public class TrackListViewModel {
     public struct Output {
-        let trackListItems: [TrackCellViewModel]
+        let cellViewModels: [TrackCellViewModel]
         let errorMessage: String?
     }
     
     public weak var viewDelegate: TrackListViewDelegate?
-    
+    public var output: Output
+    private var tracks = [Track]()
     private let trackService: TrackServiceProtocol
-    private var output: Output
+    private let currencyFormatter: CurrencyFormatter
+    private let webClient: WebClientProtocol
     
-    init(trackService: TrackServiceProtocol) {
+    init(trackService: TrackServiceProtocol, formatter: CurrencyFormatter, webClient: WebClientProtocol = WebClient.shared) {
         self.trackService = trackService
-        self.output = Output(trackListItems: [], errorMessage: nil)
+        self.currencyFormatter = formatter
+        self.webClient = webClient
+        self.output = Output(cellViewModels: [], errorMessage: nil)
     }
     
-    func start() {
+    public func track(for index: Int) -> Track {
+        return tracks[index]
+    }
+    
+    public func start() {
         refresh()
     }
     
-    func refresh() {
+    public func refresh() {
         trackService.fetchTracks(genre:.rock) { result in
             switch result {
             case .success(let response):
-                let trackVMs =  response.results.map({TrackCellViewModel(track:$0)})
-                self.output = Output(trackListItems: trackVMs, errorMessage: nil)
+                self.tracks = response.results
+                let formatter = self.currencyFormatter
+                let trackVMs =  response.results.map({
+                    TrackCellViewModel(track:$0, formatter: formatter, webClient: self.webClient)
+                })
+                self.output = Output(cellViewModels: trackVMs, errorMessage: nil)
             case .failure(let error):
-                self.output = Output(trackListItems: self.output.trackListItems, errorMessage: error.localizedDescription)
+                self.output = Output(cellViewModels: self.output.cellViewModels, errorMessage: error.localizedDescription)
             }
             
             self.viewDelegate?.didUpdate(viewState:self.output)

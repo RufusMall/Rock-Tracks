@@ -27,13 +27,9 @@ class TrackListViewModelTests: TrackTestCase, TrackListViewDelegate {
     }
     
     func setUp(service: TrackServiceProtocol) {
-        viewModel = TrackListViewModel(trackService: service)
+        viewModel = TrackListViewModel(trackService: service, formatter: CurrencyFormatter())
         viewStateBuffer = [TrackListViewModel.Output]()
         viewModel.viewDelegate = self
-    }
-    
-    override func tearDown() {
-        
     }
     
     func testViewModelLoadItems() {
@@ -44,13 +40,13 @@ class TrackListViewModelTests: TrackTestCase, TrackListViewDelegate {
         
         XCTAssert(viewStateBuffer.count == 1)
         let viewState = viewStateBuffer.first!
-        XCTAssertEqual(viewState.trackListItems.count, 50)
+        XCTAssertEqual(viewState.cellViewModels.count, 50)
         
-        let firstTrack = viewState.trackListItems[0]
+        let firstTrack = viewState.cellViewModels[0]
         XCTAssertNil(viewState.errorMessage)
         XCTAssertEqual(firstTrack.name, "I Am Rock")
         XCTAssertEqual(firstTrack.artist, "Rock")
-        XCTAssertEqual(firstTrack.price, "1.29")
+        XCTAssertEqual(firstTrack.price, "$1.29")
         XCTAssertEqual(firstTrack.artworkURL, "https://is5-ssl.mzstatic.com/image/thumb/Music117/v4/d8/fe/b2/d8feb259-1e17-4f18-e120-4c38557f6714/source/100x100bb.jpg")
     }
     
@@ -79,11 +75,11 @@ class TrackListViewModelTests: TrackTestCase, TrackListViewDelegate {
         XCTAssert(viewStateBuffer.count == 2)
         
         let firstViewState = viewStateBuffer.first!
-        XCTAssertEqual(firstViewState.trackListItems.count, 50)
+        XCTAssertEqual(firstViewState.cellViewModels.count, 50)
         
         
         let secondViewState = viewStateBuffer[1]
-        XCTAssertEqual(secondViewState.trackListItems.count, 50)
+        XCTAssertEqual(secondViewState.cellViewModels.count, 50)
         XCTAssertNotNil(secondViewState.errorMessage)
         XCTAssertEqual(secondViewState.errorMessage, "Server returned an unexpected result. Please try again.")
     }
