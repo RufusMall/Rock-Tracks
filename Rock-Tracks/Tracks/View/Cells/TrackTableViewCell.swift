@@ -15,8 +15,17 @@ class TrackTableViewCell: UITableViewCell, TrackCellViewDelegate {
     @IBOutlet weak var artistLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var artworkImage: UIImageView!
-    private var requestedURL: URL?
+    @IBOutlet weak var spacerView: UIView!
     private var viewModel: TrackCellViewModel!
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        let layer = spacerView.layer
+        
+        let lightGrayColor = UIColor(red: 0.878, green: 0.890, blue: 0.906, alpha: 1.0)
+        layer.borderColor = lightGrayColor.cgColor
+        layer.borderWidth = 1.0
+    }
     
     func configure(viewModel: TrackCellViewModel) {
         self.viewModel = viewModel

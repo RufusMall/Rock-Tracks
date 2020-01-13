@@ -43,7 +43,8 @@ class TrackListViewController: UIViewController, TrackListViewDelegate {
         if let navigationController = segue.destination as? UINavigationController {
             if let navRootAsTrackDetails = navigationController.topViewController as? TrackDetailsViewController {
                 if let selectedRowPath = self.tableView.indexPathForSelectedRow {
-                    navRootAsTrackDetails.track = self.viewModel.track(for: selectedRowPath.row)
+                    let track = self.viewModel.track(for: selectedRowPath.row)
+                    navRootAsTrackDetails.viewModel = TrackDetailsViewModel(track: track)
                 }
             }
         }

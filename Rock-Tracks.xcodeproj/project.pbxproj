@@ -31,6 +31,8 @@
 		ACA949AC23C940AD00C7769B /* TrackListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA949AB23C940AD00C7769B /* TrackListViewModel.swift */; };
 		ACA949B123C942AA00C7769B /* TrackListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA949B023C942AA00C7769B /* TrackListViewModelTests.swift */; };
 		ACBD5EA723CC0921003B05DA /* TrackCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD5EA623CC0921003B05DA /* TrackCellViewModel.swift */; };
+		ACBD5EAA23CC10F0003B05DA /* TrackDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD5EA923CC10F0003B05DA /* TrackDetailsViewModel.swift */; };
+		ACBD5EAC23CC205E003B05DA /* TrackDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD5EAB23CC205E003B05DA /* TrackDateFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		ACA949AB23C940AD00C7769B /* TrackListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewModel.swift; sourceTree = "<group>"; };
 		ACA949B023C942AA00C7769B /* TrackListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewModelTests.swift; sourceTree = "<group>"; };
 		ACBD5EA623CC0921003B05DA /* TrackCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCellViewModel.swift; sourceTree = "<group>"; };
+		ACBD5EA923CC10F0003B05DA /* TrackDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrackDetailsViewModel.swift; path = "Rock-Tracks/Tracks/ViewModel/TrackDetailsViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		ACBD5EAB23CC205E003B05DA /* TrackDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDateFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				AC17B2CA23C957D700A53A94 /* CurrencyFormatter.swift */,
+				ACBD5EAB23CC205E003B05DA /* TrackDateFormatter.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -230,8 +235,9 @@
 		ACA949AD23C940B200C7769B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				ACBD5EA823CC10C0003B05DA /* Cell */,
+				ACBD5EA923CC10F0003B05DA /* TrackDetailsViewModel.swift */,
 				ACA949AB23C940AD00C7769B /* TrackListViewModel.swift */,
-				ACBD5EA623CC0921003B05DA /* TrackCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -250,6 +256,14 @@
 				ACA949B023C942AA00C7769B /* TrackListViewModelTests.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ACBD5EA823CC10C0003B05DA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ACBD5EA623CC0921003B05DA /* TrackCellViewModel.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,9 +375,11 @@
 				ACA9496E23C9173700C7769B /* TrackListViewController.swift in Sources */,
 				ACA9498E23C921FF00C7769B /* TrackListSplitViewController.swift in Sources */,
 				ACA9498C23C91F9A00C7769B /* TrackDetailsViewController.swift in Sources */,
+				ACBD5EAA23CC10F0003B05DA /* TrackDetailsViewModel.swift in Sources */,
 				AC3A761623C9955B001901FB /* TrackTableViewCell.swift in Sources */,
 				ACA9499A23C92B4E00C7769B /* iTunesTrackService.swift in Sources */,
 				ACA949A623C92CF900C7769B /* TrackListResponse.swift in Sources */,
+				ACBD5EAC23CC205E003B05DA /* TrackDateFormatter.swift in Sources */,
 				ACA9499823C9297000C7769B /* WebClientProtocol.swift in Sources */,
 				ACA9499623C928BF00C7769B /* WebClient.swift in Sources */,
 				ACA949AC23C940AD00C7769B /* TrackListViewModel.swift in Sources */,
